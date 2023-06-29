@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 //create component
 const TrafficLight = (props) => {
@@ -8,15 +8,27 @@ const TrafficLight = (props) => {
 	const [colorThree, setColorThree] = useState("Gray");
 	
 	function redColor () {
-		if (colorOne=="Gray") {setColorOne("Red")}
+		if (colorOne=="Gray") {
+			setColorOne("Red")
+			setColorTwo("Gray")
+			setColorThree("Gray")
+		}
 		else{setColorOne("Gray")}
 		}
 	function yellowColor () {
-		if (colorTwo=="Gray") {setColorTwo("Yellow")}
+		if (colorTwo=="Gray") {
+			setColorOne("Gray")
+			setColorTwo("Yellow")
+			setColorThree("Gray")
+		}
 		else{setColorTwo("Gray")}
 		}
 	function greenColor () {
-		if (colorThree=="Gray") {setColorThree("Green")}
+		if (colorThree=="Gray") {
+			setColorOne("Gray")
+			setColorTwo("Gray")
+			setColorThree("Green")
+		}
 		else{setColorThree("Gray")}
 		}
 
