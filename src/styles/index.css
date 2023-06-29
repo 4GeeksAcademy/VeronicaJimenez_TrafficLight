@@ -10,3 +10,32 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.Container {
+    background-color: black;
+    padding: 1px;
+    margin: 15px auto;
+    width: 180px;
+    height: 400px;
+    
+}
+
+.Container div {
+    margin: 15px auto;
+    width: 115px;
+    height: 110px;
+    border-radius: 50%;
+    border-color: gray;
+    border-style: solid;
+}
+.Red {
+    background-color: red;
+}
+.Yellow {
+    background-color: orange;    
+}
+.Green {
+    background-color: green;
+}
+.Gray {
+    background-color: gray;
+}
